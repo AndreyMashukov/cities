@@ -1,0 +1,45 @@
+{
+    "name": "andrey-mashukov/cities",
+    "keywords": ["cities list", "city lister"],
+    "homepage": "https://github.com/AndreyMashukov/cities",
+    "description": "Class for get cities list",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Mashukov",
+            "email": "a.mashukov@yandex.ru",
+            "role": "Developer"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "AdService\\": ["src"]
+        },
+        "classmap": [
+            "src"
+        ]
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-mbstring": "*"
+
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "AdService\\": ["tests"]
+        }
+    },
+    "require-dev": {
+        "pdepend/pdepend": "^2.2",
+        "phpmd/phpmd": "^2.4",
+        "phploc/phploc": "^2.1",
+        "sebastian/phpcpd": "^2.0",
+        "phpdocumentor/phpdocumentor": "^2.9",
+        "mamuz/php-dependency-analysis": "^0.6",
+        "phpunit/phpunit": "^4.8",
+        "logics/phpunit-extensions": "^0.2||dev-trunk",
+        "logics/codesniffer": "^0.1||dev-trunk",
+        "logics/extcheck": "^0.1||dev-trunk"
+    },
+    "prefer-stable": true
+}
